@@ -4,7 +4,7 @@ interface Day {
 
     val index: Int
 
-    fun partOne(lines: List<String>): Int
+    fun partOne(rows: List<String>): Int
 
-    fun partTwo(lines: List<String>): Long
+    fun partTwo(rows: List<String>): Long
 }

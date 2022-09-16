@@ -2,7 +2,6 @@ package aocskeleton
 
 import kotlin.test.Ignore
 import kotlin.test.Test
-import kotlin.test.assertEquals
 
 internal class Day1Test {
 
