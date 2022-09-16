@@ -8,6 +8,13 @@ internal class InputConverterTest {
 
     @Test
     fun testRowToInts() {
-        assertThat(InputConverter.rowToInts("1, 2, 3 ", ',')).containsExactly(1,2,3)
+        assertThat("1, 2, 3 ".toInts(','))
+            .containsExactly(1,2,3)
+    }
+
+    @Test
+    fun testEachCharInEachRowToInt() {
+        assertThat(listOf(" 123 "," 456 ").eachCharToInt())
+            .containsExactly(listOf(1,2,3), listOf(4,5,6))
     }
 }
